@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion y servicios</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylebr.css">
+    <link rel="stylesheet" href="../css/stylefrec.css">
+    <link rel="shortcut icon" href="../ico/direccion.png" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="/js/scriptbr.js"></script>
+      <!-- ARCHIVO SCRIPT -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--AGREGUE LA FUNCION DE BOTON HACIA ARRIBA-->
+    <button onclick="topFunction()" id="btnArriba"  height="50" title="ir hacia arriba" ></button> 
+</head>
+<body>
+  <div class="portada">
+    <h1>Informacion y Servicios</h1>
+</div>
+
+  <!--BARRA DE NAVEGACION-->
+  <div class="cabecera">
+    <div class="contenedor">
+      <nav>
+          <ul>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/index.html">Puntos Claves</a></li>
+              <li><a href="/index.html">Espacios Verdes</a></li>
+              <li><a href="/index.html">Clubes</a></li>
+              <li><a href="#">Informacion y servicios</a></li>          
+          </ul>
+      </nav>
+  </div>
+</div>
+
+<!-- SECCION CON JS DONDE VER PREGUNTAS FRECUENTES Y DEJAR COMENTARIOS -->
+
+<div class="titulofrecuente"><h1>PREGUNTAS FRECUENTES</h1></div>
+
+
+<section class="preguntas">
+  
+  <div class="desplegar">
+      <div class="item">
+          <div class="pregunta">Como llegar a San Nicolas desde Capital</div>
+          <div class="respuesta">La mejor forma de ir desde Ciudad Autónoma de Buenos Aires a San Nicolás de los Arroyos es en autobús vía Presidente Peron y Parador San Nicolas que dura 4h 59m. Alternativamente, puedes tomar un tren vía Retiro.</div>
+      </div>
+      <div class="item">
+        <div class="pregunta">¿Cuántos kilómetros hay de capital a San Nicolás de los Arroyos?</div>
+        <div class="respuesta"> San Nicolás de los Arroyos es un destino ideal para una escapada cerca de la Ciudad de Buenos Aires, a tan sólo 240 kilómetros de distancia</div>
+    </div>
+     
+      <div class="item">
+        <div class="pregunta">¿Que rio pasa por San Nicolas?</div>
+        <div class="respuesta">La Ciudad de San Nicolás integra el sistema de ciudades costeras del Río Paraná de media escala, junto con San Pedro, Zárate, Campana</div>
+    </div>
+      
+    <div class="item">
+      <div class="pregunta">¿Cuantos habitantes hay en la Ciudad de San Nicolas?</div>
+      <div class="respuesta">Total 165.375 habitantes</div>
+  </div>
+  <div class="item">
+    <div class="pregunta">¿Que puedo conocer?</div>
+    <div class="respuesta">Descubrí San Nicolás, conocé todas las opciones para disfrutar de la ciudad.
+      Balneario La Rycsa. Zona Sur, lindero a Bº Somisa.
+      El Yaguarón. Eco Parque San Nicolás, San Nicolás de los Arroyos, Buenos Aires.
+      Eco Parque San Nicolás. ...
+      Espacio Interactivo en Teatro. ...
+      Teatro San Nicolás. ...
+      Circuito histórico.
+      Catedral. ...
+      Logia Masónica.
+    </div>
+</div>
+
+  </div>
+</section>
+<br>
+<section id="cardsinfo">
+  <h2>SERVICIOS PRINCIPALES</h2>
+<div class="sub_cabecera">
+  <div class="container_cards">
+
+      <div class="cards" style="background-image: url('../img/comisaria.jpg');">
+        <div class="contenido_cards">
+          <p>Comisaria 1era(Rivadavia 71)</p>
+        </div>
+      </div>
+
+      <div class="cards" style="background-image: url('../img/hospital.jpg');">
+        <div class="contenido_cards">
+          <p>Hospital San Felipe (Av Mariano Moreno 31)</p>
+        </div>
+      </div>
+
+      <div class="cards" style="background-image: url('../img/muni.jpg');">
+        <div class="contenido_cards">
+          <p>Municipalidad (Presidente Illia 1107-1147)</p>
+        </div>
+      </div>
+<br>
+</section>
+
+         
+<div class="titulocomentario">
+<h2>ENVIA UN COMENTARIO SOBRE QUE TE PARECIO SAN NICOLAS DE LOS ARROYOS</h2>
+</div>
+     
+        <section id="contacto" class="contact">
+            <div class="container">
+              
+              <form id="formulario" action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono:</label>
+                  <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                  <label for="comentario">Comentario:</label>
+                  <textarea id="comentario" name="comentario" rows="5" required></textarea>
+                </div>
+                <button onclick="enviarComentario()">Enviar Comentario</button>
+              </form>
+            </div>
+          </section>
+        
+   <br>
+             
+    <div class="firma">
+      <p>&copy; Turismo Nicoleño. Desarrollado por Ramirez y Saucedo.</p>
+    </div>
+  
+  </div>
+</body>
+</html>
